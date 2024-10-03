@@ -1,0 +1,19 @@
+/* App.css */
+.app-container {
+  display: flex;
+  height: 100vh; 
+}
+
+.sidebar {
+  width: 250px; /* Fixed width for the sidebar */
+  background-color: #333; /* Sidebar background color */
+  color: white; /* Sidebar text color */
+}
+
+.main-content {
+  
+  flex-grow: 1; /* Takes up the remaining width */
+  background-color: #F0F0F1; /* Background color for the main content */
+  padding: 20px; /* Padding for some spacing */
+  overflow-y: auto; /* Enables scrolling if content is too long */
+}

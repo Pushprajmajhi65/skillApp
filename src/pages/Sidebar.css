@@ -1,0 +1,123 @@
+/* Sidebar.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  position: relative; /* Make the container relative for positioning the sidebar */
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 271px;
+  background-color: #FFFFFF; 
+  color: #202124;
+  padding: 36px;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition when resizing and fading */
+  transform: translateX(0); /* Default position */
+  opacity: 1; /* Default opacity */
+  position: relative; /* Fix sidebar position */
+  height: 100%; /* Full height */
+  z-index: 1000; /* Ensure it's on top */
+}
+
+/* Adjust sidebar styles for smaller screens */
+@media (max-width: 992px) {
+  .sidebar {
+    transform: translateX(-100%);
+   
+     /* Hide the sidebar off-screen */
+  }
+
+  .sidebar.open {
+    transform: translateX(0); /* Show sidebar */
+    opacity: 1; /* Fade in */
+  }
+
+  .toggle-btn {
+    display: block; /* Show button */
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    transform: translateX(0); /* Always show sidebar */
+  }
+
+  .toggle-btn {
+    display: none; /* Hide button on larger screens */
+  }
+}
+
+/* Menu Styles */
+.menu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 15px 20px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 12px;
+}
+
+.menu li:hover {
+  background-color: #ACDDD9; 
+  color: #202124; 
+  transform: scale(1.02); 
+  box-shadow: 0 2px 10px #ACDDD9; 
+  transition: transform 0.5s ease, box-shadow 1.5s ease; 
+}
+
+.menu li.active {
+  background-color: #ACDDD9; 
+  color: #202124; 
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #F5F5F5; 
+  transition: margin-left 0.3s ease; /* Smooth transition for content margin */
+}
+
+/* Responsive adjustments for main content */
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0; /* No margin when sidebar is closed */
+  }
+}
+
+/* Adjust content margin when sidebar is open */
+.sidebar.open ~ .main-content {
+  margin-left: 271px; /* Adjust content margin when sidebar is open */
+}
+/* Sidebar.css */
+
+/* Toggle Button Styles */
+.toggle-btn {
+  display: block; /* Ensure the button is displayed */
+  position: absolute; /* Position relative to the sidebar */
+  top: 20px; /* Adjust top position */
+  right: -40px; /* Position it to the right of the sidebar */
+  background-color: #ACDDD9; /* Button color */
+  border: none; /* Remove border */
+  padding: 10px; /* Padding for button */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for color change */
+  z-index: 1001; /* Ensure it's on top of sidebar */
+}
+
+.toggle-btn:hover {
+  background-color: #99B3B0; /* Darker shade on hover */
+}
+
+/* Adjust button visibility for smaller screens */
+@media (min-width: 992px) {
+  .toggle-btn {
+    display: none; 
+  }
+}

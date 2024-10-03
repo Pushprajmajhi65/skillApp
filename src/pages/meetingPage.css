@@ -1,0 +1,174 @@
+/* meetingPage.css */
+.meeting-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all content */
+  padding: 20px; /* Padding around the page */
+}
+
+.header {
+  display: flex; /* Use flexbox for header layout */
+  justify-content: space-between; /* Space between title and join input */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space below header */
+}
+.button-container{
+  row-gap: 20px;
+}
+
+.header-title {
+  margin: 0; /* No margin for title */
+}
+
+.meeting-join-container {
+  display: flex; /* Flexbox for input and button */
+}
+
+input[type="text"] {
+  padding: 10px; /* Padding inside input */
+  border: 1px solid #ccc; /* Border for input */
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 5px; /* Space between input and button */
+}
+
+button {
+  padding: 10px 15px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.new-meeting-button {
+  margin: 20px 0; /* Margin above and below the button */
+  padding: 10px 15px; /* Padding for the new meeting button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #28a745; /* Green button background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth background change */
+}
+
+.new-meeting-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.upcoming-meetings-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; /* Stack meeting cards vertically */
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Space below upcoming meetings */
+}
+
+.meeting-cards {
+  display: flex; /* Use flexbox for card layout */
+  flex-direction: row; /* Align cards in a row */
+  overflow-x: auto; /* Horizontal scrolling for cards */
+  margin-bottom: 20px; /* Space below meeting cards */
+}
+
+.meeting-card {
+  padding: 15px; /* Padding inside each card */
+  margin: 10px; /* Space around each card */
+  border: 1px solid #ccc; /* Border around cards */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* Card background color */
+  min-width: 150px; /* Minimum width for cards */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.meeting-card h3 {
+  margin: 0 0 5px; /* Space below meeting title */
+}
+
+.meeting-card p {
+  margin: 0; /* Remove default margin for paragraphs */
+  color: #666; /* Text color for date and time */
+}
+
+/* Calendar styles */
+.calendar-container {
+  width: 100%; /* Full width */
+  margin-top: 20px; /* Space above calendar */
+  border: 1px solid #ccc; /* Border for calendar container */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside calendar */
+  background-color: #ACDDD9; /* Background color for calendar */
+}
+
+.calendar {
+  width: 100%; /* Full width for the calendar */
+  height: auto; /* Set height to auto to adapt */
+  display: flex; /* Center content */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  font-size: 18px; /* Font size for calendar text */
+  color: #333; /* Text color */
+}
+
+/* Custom styles for the react-calendar component */
+.react-calendar {
+  width: 100%; /* Make calendar full width */
+  border: none; /* Remove default border */
+  background: #d2efed; /* Set background color for calendar */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.react-calendar__navigation {
+  margin: 0 10px; /* Space around navigation */
+}
+
+.react-calendar__navigation button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #000000; /* Text color for navigation */
+  font-size: 16px; /* Font size for navigation */
+}
+
+.react-calendar__navigation button:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.react-calendar__tile {
+  border-radius: 4px; /* Rounded corners for tiles */
+  color: black; /* Set tile text color to black */
+}
+
+.react-calendar__tile--active {
+  background: #0C3A3A; /* Active date background color */
+  color: white; /* Active date text color */
+}
+
+.react-calendar__tile--hover {
+  background: rgba(255, 255, 255, 0.5); /* Light background color on hover */
+}
+
+/* Style for month/year selection */
+.react-calendar__month-view__weekdays {
+  color: black; /* Text color for weekdays */
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: bold; /* Bold font for weekdays */
+}
+
+.react-calendar__month-view__days {
+  padding: 10px; /* Padding for day tiles */
+}
+
+.react-calendar__month-view__days__day {
+  display: flex; /* Use flexbox for day alignment */
+  justify-content: center; /* Center day numbers */
+  align-items: center; /* Center vertically */
+  height: 40px; /* Fixed height for day tiles */
+}
