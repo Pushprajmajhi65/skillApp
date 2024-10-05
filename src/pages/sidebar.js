@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faNewspaper, faComments, faCalendarAlt, faBars } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, useLocation } from 'react-router-dom';
-import './Sidebar.css'; 
+import './css/Sidebar.css'; 
 
 const Sidebar = () => {
   const [active, setActive] = useState('overview');

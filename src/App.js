@@ -5,7 +5,9 @@ import React from 'react'; import { BrowserRouter as Router, Routes, Route } fro
   import Chat from './pages/Chat'; 
   import Meetings from '../src/pages/Meetings';
   import Navbar from './pages/header';
-  
+  import NotFound from './pages/notfound';
+  import Login from './pages/login';
+  import Signup from './pages/signup';
 function App() {
   return (
     <Router>
@@ -21,6 +23,9 @@ function App() {
             <Route path="/feed" element={<Feed />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/meetings" element={<Meetings />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
          
         </div>

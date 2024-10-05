@@ -16,7 +16,7 @@ const ChatInterface = () => {
   };
 
   return (
-    <div className="chat-container">
+    <div className="chat-container-1">
       <div className="chat-header">
         <h3>Chat</h3>
       </div>

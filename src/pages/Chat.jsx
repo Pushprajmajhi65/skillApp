@@ -1,15 +1,13 @@
 import React from 'react';
-// import './Chat.css';
-import ChatInterface from './chatInterface'
-import ChatSidebar from './chatsidebar'
+import ChatInterface from './chatInterface';
+import ChatSidebar from './chatsidebar';
 
 const Chat = () => {
   return (
-    <div style={{ }}>
-    <ChatSidebar></ChatSidebar>
-    <ChatInterface></ChatInterface>
+    <div style={{ display: "flex", flexDirection: "row",    }}>
+      <ChatSidebar />
+      <ChatInterface />
     </div>
-
   );
 };
 

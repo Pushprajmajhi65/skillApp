@@ -7,8 +7,8 @@
 }
 
 .header {
-  display: flex; /* Use flexbox for header layout */
-  justify-content: space-between; /* Space between title and join input */
+  display: flex; 
+  justify-content: space-between; 
   width: 100%; /* Full width */
   margin-bottom: 20px; /* Space below header */
 }
@@ -124,15 +124,15 @@ button:hover {
 }
 
 .react-calendar__navigation {
-  margin: 0 10px; /* Space around navigation */
+  margin: 0 10px;
 }
 
 .react-calendar__navigation button {
-  background-color: transparent; /* Transparent background */
-  border: none; /* Remove default border */
-  cursor: pointer; /* Pointer cursor on hover */
-  color: #000000; /* Text color for navigation */
-  font-size: 16px; /* Font size for navigation */
+  background-color: transparent; 
+  border: none;
+  cursor: pointer;
+  color: #000000; 
+  font-size: 16px; 
 }
 
 .react-calendar__navigation button:hover {

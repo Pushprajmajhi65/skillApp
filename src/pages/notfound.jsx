@@ -1,0 +1,14 @@
+// src/pages/NotFound.js
+import React from 'react';
+
+function NotFound() {
+  return (
+    <div className="text-center">
+      <h1>404</h1>
+      <p>Page not found</p>
+      <a href="/overview">Go to Home</a>
+    </div>
+  );
+}
+
+export default NotFound;

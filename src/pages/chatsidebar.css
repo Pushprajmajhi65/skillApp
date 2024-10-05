@@ -1,0 +1,93 @@
+.chat-sidebar-container {
+  width: 272px; /* Set a width for the sidebar */
+  height: 80vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling only for the sidebar */
+  background-color: #f9f9f9;
+  border-right: 1px solid #e0e0e0;
+  position: relative;
+  border-radius: 12px;
+}
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.chat-sidebar-container::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Optional: can set background color for the scrollbar area */
+}
+
+/* Hide scrollbar for Firefox */
+.chat-sidebar-container {
+  scrollbar-width: none; /* Firefox hides scrollbar */
+}
+
+/* Hide scrollbar for IE and Edge */
+.chat-sidebar-container {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.chat-sidebar-title {
+  padding: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-bar {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  margin-right: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-icon {
+  color: #888;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.user-status {
+  font-size: 12px;
+  color: #888;
+}
+
+.last-active {
+  font-size: 12px;
+  color: #aaa;
+}
